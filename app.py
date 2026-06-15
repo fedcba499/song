@@ -25,7 +25,7 @@ def index():
 
 
 
-        options = {'format': 'bestaudio', 'progress_hooks':[hook]}
+        options = {'format': 'bestaudio', 'progress_hooks':[hook], 'cookiefile':'cookies.txt'}
 
         with yt_dlp.YoutubeDL(options) as ydl:
             ydl.download([link])
